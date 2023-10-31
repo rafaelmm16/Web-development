@@ -1,0 +1,114 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002b38;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    color: #ffffff;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #0e001d;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+header a.call-to-action {
+    display: inline-block;
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Estilos da seção principal */
+main section {
+    margin-bottom: 20px;
+}
+
+main section#texto {
+    background-color: #adc000;
+    padding: 20px;
+}
+
+main section#depoimentos {
+    background-color: #adc000;
+    padding: 20px;
+}
+
+main section#depoimentos .depoimento {
+    margin-bottom: 20px;
+}
+
+main section#contato {
+    background-color: #adc000;
+    padding: 20px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Consultas de mídia para responsividade */
+@media (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Estilos para telefones */
+@media (max-width: 599px) {
+    body {
+        font-size: 14px;
+    }
+
+    /* Adicione mais estilos para telefones aqui */
+}
+
+/* Estilos para tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Adicione mais estilos para tablets aqui */
+}
+
+/* Estilos para desktops */
+@media (min-width: 900px) {
+    body {
+        font-size: 18px;
+    }
+
+    /* Adicione mais estilos para desktops aqui */
+}
