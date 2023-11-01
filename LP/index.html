@@ -9,11 +9,31 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="nome">Empresa</h1>
-        <img src="imagem_destaque.jpg" alt="Imagem de destaque">
-        <a href="#" class="call-to-action">Saiba mais</a>
-    </header>
+    <script>
+        let index = 0;
+        function nextImage() {
+            let images = document.querySelectorAll('.carousel-image');
+            index = (index + 1) % images.length;
+            for(let i = 0; i < images.length; i++) {
+                images[i].classList.remove('active');
+            }
+            images[index].classList.add('active');
+        }
+        window.onload = function() {
+            setInterval(nextImage, 2000); // Muda a imagem a cada 2 segundos
+        };
+    </script>
+
+<header>
+    <h1 class="carousel">Empresa</h1>
+    <div class="carousel">
+        <img class="carousel-image active" src="imagem_destaque.jpg" alt="Imagem de destaque">
+        <img class="carousel-image" src="imagem_destaque2.jpg" alt="Imagem de destaque 2">
+        <img class="carousel-image" src="imagem_destaque3.jpg" alt="Imagem de destaque 3">
+    </div>
+    <a href="#" class="call-to-action">Saiba mais</a>
+</header>
+
 
     <main>
         <section id="texto">
