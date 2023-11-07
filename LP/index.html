@@ -1,73 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Exemplo</title>
     <link rel="stylesheet" href="style.css">
-    <title>[Nome da empresa] - A empresa que vai mudar a sua vida</title>
 </head>
-
 <body>
-    <script>
-        let index = 0;
-        function nextImage() {
-            let images = document.querySelectorAll('.carousel-image');
-            index = (index + 1) % images.length;
-            for(let i = 0; i < images.length; i++) {
-                images[i].classList.remove('active');
-            }
-            images[index].classList.add('active');
-        }
-        window.onload = function() {
-            setInterval(nextImage, 2000); // Muda a imagem a cada 2 segundos
-        };
-    </script>
-
-<header>
-    <h1 class="carousel">Empresa</h1>
-    <div class="carousel">
-        <img class="carousel-image active" src="imagem_destaque.jpg" alt="Imagem de destaque">
-        <img class="carousel-image" src="imagem_destaque2.jpg" alt="Imagem de destaque 2">
-        <img class="carousel-image" src="imagem_destaque3.jpg" alt="Imagem de destaque 3">
+    <div class="container">
+        <header class="header">
+            <img src="/LP/src/img/header.jpg" alt="Imagem de fundo do header">
+            <h1>Aprenda a tocar violão em 30 dias sem sair de casa</h1>
+            <a href="#" class="call-to-action">Baixe o e-book grátis agora</a>
+        </header>
+        <main class="main">
+            <section class="beneficios">
+                <h2>Benefícios de aprender a tocar violão</h2>
+                <ul>
+                    <li>Desenvolve a criatividade e a expressão artística</li>
+                    <li>Relaxa a mente e alivia o estresse</li>
+                    <li>Melhora a coordenação motora e a memória</li>
+                    <li>Amplia o repertório musical e cultural</li>
+                </ul>
+            </section>
+            <section class="sobre">
+                <h2>Sobre o autor do e-book</h2>
+                <p>João Silva é um músico profissional e professor de violão há mais de 10 anos. Ele criou um método simples e eficaz para ensinar qualquer pessoa a tocar violão do zero, sem precisar de aulas presenciais ou equipamentos caros. No seu e-book, ele revela os segredos e as técnicas que ele usa para ensinar seus alunos a tocarem suas músicas favoritas em apenas 30 dias.</p>
+            </section>
+            <section class="depoimentos">
+                <h2>Depoimentos de quem já aprendeu com o e-book</h2>
+                <div class="depoimento">
+                    <img src="/LP/src/img/ana.jpg" alt="Foto de Ana">
+                    <p>"Eu sempre quis aprender a tocar violão, mas nunca tive tempo ou dinheiro para fazer aulas. Quando eu vi o e-book do João, eu resolvi tentar. E não me arrependi! Em menos de um mês, eu já estava tocando várias músicas que eu adoro. O método dele é muito fácil e divertido. Eu recomendo para todo mundo!"</p>
+                    <span>Ana, 25 anos</span>
+                </div>
+                <div class="depoimento">
+                    <img src="/LP/src/img/pedro.jpg" alt="Foto de Pedro">
+                    <p>"Eu já tinha tentado aprender a tocar violão com outros cursos online, mas nenhum deles funcionou para mim. Eles eram muito chatos e complicados. O e-book do João foi diferente. Ele me ensinou tudo o que eu precisava saber de forma simples e prática. Em poucas semanas, eu já estava tocando violão com confiança e alegria."</p>
+                    <span>Pedro, 32 anos</span>
+                </div>
+            </section>
+            <section class="contato">
+                <h2>Entre em contato</h2>
+                <p>Se você tem alguma dúvida, sugestão ou elogio, entre em contato conosco pelo formulário abaixo. Nós responderemos o mais rápido possível.</p>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Todos os direitos reservados © 2023</p>
+        </footer>
     </div>
-    <a href="#" class="call-to-action">Saiba mais</a>
-</header>
-
-
-    <main>
-        <section id="texto">
-            <h2 class="nome">Empresa</h2>
-            <p class="nome">[Descrição da empresa]</p>
-            <ul>
-                <li class="nome">[Produto 1]</li>
-                <li class="nome">[Produto 2]</li>
-                <li class="nome">[Serviço 1]</li>
-                <li class="nome">[Serviço 2]</li>
-            </ul>
-        </section>
-
-        <section id="depoimentos">
-            <h2>Depoimentos de clientes</h2>
-            <div class="depoimento">
-                <p class="nome">"[Depoimento do cliente]"</p>
-                <span class="nome">[Nome do cliente]</span>
-            </div>
-        </section>
-
-        <section id="contato">
-            <h2>Contato</h2>
-            <ul>
-                <li class="nome">[Endereço]</li>
-                <li class="nome">(XX) xxxxx-xxx</li>
-                <li class="nome">empresa@empresa.com</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>Copyright &copy; 2023 [Nome da empresa]. Todos os direitos reservados.</p>
-    </footer>
 </body>
-
 </html>
