@@ -1,99 +1,267 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, purple, black);
+    color: white;
+}
+
+.login-register {
+    float: right;
+}
+
+.login-register a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.login-register a:hover {
+    background-color: #777;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .header {
-    background-color: #333;
-    color: white;
-    font-size: 24px;
-    padding: 10px;
-    text-align: center;
-}
-
-.content {
-    flex: 1;
-    overflow-y: scroll;
-}
-
-.tabs {
     display: flex;
-    justify-content: space-around;
-    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.tab {
-    color: #333;
-    font-size: 16px;
-}
-
-.tab.active {
-    color: #f00;
+.logo {
+    font-size: 36px;
     font-weight: bold;
 }
 
-.section {
-    padding: 10px;
+.slogan {
+    font-size: 18px;
+    font-style: italic;
 }
 
-.section-items {
+.main {
     display: flex;
-    overflow-x: scroll;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.section-item {
-    flex: 0 0 150px;
-    height: 200px;
-    margin-right: 10px;
+.phone {
+    width: 300px;
+    height: 600px;
+    border: 10px solid black;
+    border-radius: 20px;
+    background: white;
     position: relative;
 }
 
-.section-item-image {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+.phone-screen {
+    width: 280px;
+    height: 560px;
+    margin: 10px;
+    overflow: hidden;
 }
 
-.section-item-title {
-    background-color: rgba(0, 0, 0, 0.7);
-    bottom: 0;
-    color: white;
-    font-size: 16px;
-    left: 0;
-    padding: 5px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-}
-
-.section-button {
-    background-color: #f00;
-    color: white;
-    font-size: 16px;
-    margin-top: 10px;
+.phone-header {
+    height: 60px;
+    background: purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px;
-    text-align: center;
+}
+
+.phone-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.phone-menu {
+    width: 30px;
+    height: 30px;
+    background: url("https://cdn-icons-png.flaticon.com/512/1828/1828859.png");
+    background-size: cover;
+}
+
+.phone-search {
+    height: 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.phone-input {
+    width: 200px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+.phone-button {
+    width: 20px;
+    height: 20px;
+    background: url("https://cdn-icons-png.flaticon.com/512/622/622669.png");
+    background-size: cover;
+}
+
+.phone-list {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.phone-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.phone-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.phone-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.phone-star {
+    width: 20px;
+    height: 20px;
+    background: url("https://cdn-icons-png.flaticon.com/512/1828/1828906.png");
+    background-size: cover;
+}
+
+.tv {
+    width: 800px;
+    height: 600px;
+    border: 10px solid black;
+    border-radius: 20px;
+    background: white;
+    position: relative;
+    margin-left: 40px;
+}
+
+.tv-screen {
+    width: 780px;
+    height: 560px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.tv-header {
+    height: 60px;
+    background: purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tv-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.tv-menu {
+    width: 30px;
+    height: 30px;
+    background: url("https://cdn-icons-png.flaticon.com/512/1828/1828859.png");
+    background-size: cover;
+}
+
+.tv-schedule {
+    height: 480px;
+    overflow-y: scroll;
+}
+
+.tv-item {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.tv-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tv-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.tv-time {
+    font-size: 18px;
+    font-weight: bold;
+    color: purple;
 }
 
 .footer {
-    background-color: #333;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.footer-item {
-    color: white;
-    font-size: 16px;
+.footer-link {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-item.active {
-    font-weight: bold;
+.footer-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .phone {
+        width: 100%;
+    }
+
+    .tv {
+        width: 100%;
+        margin-left: 0;
+    }
 }

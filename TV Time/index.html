@@ -2,47 +2,84 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Referenciando o arquivo CSS do Font Awesome -->
-    <<script src="https://kit.fontawesome.com/adbe52cfb3.js" crossorigin="anonymous"></script>
-    <!-- Referenciando o arquivo CSS -->
+    <title>TV Time</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">Stream</div>
-        <div class="content">
-            <div class="tabs">
-                <div class="tab active">Minha Lista</div>
-                <div class="tab">Assistir a Seguir</div>
-                <div class="tab">Em Breve</div>
-            </div>
-            <div class="section">
-                <div class="section-items">
-                    <div class="section-item">
-                        <img class="section-item-image" src="bobs-burgers.jpg" alt="Bob's Burgers">
-                        <div class="section-item-title">Bob's Burgers</div>
+    <header class="header">
+        <h1 class="logo">TV Time</h1>
+        <h2 class="slogan">Assista ao que você ama</h2>
+
+        <div class="login-register">
+            <a href="/login">Login</a>
+            <a href="/register">Cadastro</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="phone">
+            <div class="phone-screen">
+                <div class="phone-header">
+                    <h3 class="phone-logo">TV Time</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="phone-menu">
+                </div>
+                <div class="phone-search">
+                    <input type="text" class="phone-input" placeholder="Pesquisar">
+                    <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" class="phone-button">
+                </div>
+                <div class="phone-list">
+                    <div class="phone-item">
+                        <img src="https://example.com/image1.png" class="phone-image">
+                        <h4 class="phone-title">Título do filme 1</h4>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png" class="phone-star">
                     </div>
-                    <div class="section-item">
-                        <img class="section-item-image" src="elite.jpg" alt="Élite">
-                        <div class="section-item-title">Élite</div>
+                    <div class="phone-item">
+                        <img src="https://example.com/image2.png" class="phone-image">
+                        <h4 class="phone-title">Título do filme 2</h4>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png" class="phone-star">
                     </div>
-                    <div class="section-item">
-                        <img class="section-item-image" src="one-piece.jpg" alt="One Piece">
-                        <div class="section-item-title">One Piece</div>
+                    <div class="phone-item">
+                        <img src="https://example.com/image3.png" class="phone-image">
+                        <h4 class="phone-title">Título do filme 3</h4>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828906.png" class="phone-star">
                     </div>
                 </div>
-                <div class="section-button">Ver Todas as Séries</div>
             </div>
         </div>
-        <div class="footer">
-            <div class="footer-item active"><i class="fa fa-tv"></i> Séries</div>
-            <div class="footer-item"><i class="fa fa-film"></i> Filmes</div>
-            <div class="footer-item"><i class="fa fa-magnifying-glass"></i> Descobrir</div>
-            <div class="footer-item"><i class="fa fa-user"></i> Perfil</div>
-        </div>
-    </div>
-</body>
 
-</html>
+        <div class="tv">
+            <div class="tv-screen">
+                <div class="tv-header">
+                    <h3 class="tv-logo">TV Time</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="tv-menu">
+                </div>
+                <div class="tv-schedule">
+                    <div class="tv-item">
+                        <img src="https://example.com/image1.png" class="tv-image">
+                        <h4 class="tv-title">Título do programa 1</h4>
+                        <span class="tv-time">20:00</span>
+                    </div>
+                    <div class="tv-item">
+                        <img src="https://example.com/image2.png" class="tv-image">
+                        <h4 class="tv-title">Título do programa 2</h4>
+                        <span class="tv-time">21:00</span>
+                    </div>
+                    <div class="tv-item">
+                        <img src="https://example.com/image3.png" class="tv-image">
+                        <h4 class="tv-title">Título do programa 3</h4>
+                        <span class="tv-time">22:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="#">
+            <img srcset="image-small.jpg 100w, image-medium.jpg 500w, image-large.jpg 1000w" sizes="100vw" alt="Image">
+            <img src="https://example.com/image4.png" class="footer-image">
+        </a>
+        <a href="#">
+            <img src="https://example.com/image5.png" class="footer-image">
+        </a>
