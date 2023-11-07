@@ -1,1 +1,1 @@
-![](Captura de tela 2023-11-07 171326.png)
+![](image.png)
