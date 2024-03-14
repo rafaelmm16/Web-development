@@ -19,9 +19,9 @@ Este repositório é destinado a fornecer materiais de estudo e recursos relacio
 
 ## Tecnologias Utilizadas
 
-- ![HTML5](https://img.icons8.com/color/48/000000/html-5.png)
-- ![CSS3](https://img.icons8.com/color/48/000000/css3.png) 
-- ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) 
+ ![HTML5](https://img.icons8.com/color/48/000000/html-5.png)
+ ![CSS3](https://img.icons8.com/color/48/000000/css3.png) 
+ ![JavaScript](https://img.icons8.com/color/48/000000/javascript.png) 
 ---
 
 ## Como Contribuir
