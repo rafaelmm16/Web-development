@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     font-family: "Raleway", sans-serif;
-    background-color: #01e37f;
+    background-color: #0b6604b2;
 }
 h3 {
     font-size: 0.7em;
@@ -87,10 +87,10 @@ img {
 }
 /* ----- Informations Section ----- */
 .product__info {
-    padding: 0.8em 0;
+    padding: 1.5em 0.8em; /* Ajuste no padding */
 }
 .title h1 {
-    margin-bottom: 0.1em;
+    margin-bottom: 0.5em; /* Ajuste na margem */
     color: #4c4c4c;
     font-size: 1.5em;
     font-weight: 900;
@@ -142,8 +142,7 @@ img {
     margin-left: 1em;
 }
 .description li {
-    text-indent: -0.6em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5em; /* Removido text-indent */
 }
 .buy--btn {
     padding: 1.5em 3.1em;
