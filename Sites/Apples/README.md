@@ -1,3 +1,3 @@
 # Apples
 
-![](image.png)
+![](img.png)
