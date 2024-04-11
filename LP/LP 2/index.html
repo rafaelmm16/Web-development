@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Landing Page</title>
+    <!-- Adicione o link para o arquivo CSS do Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Barra de Navegação -->
+    <nav class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-2xl font-semibold">Logo</div>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-gray-300">Início</a></li>
+                <li><a href="#" class="hover:text-gray-300">Sobre</a></li>
+                <li><a href="#" class="hover:text-gray-300">Serviços</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da Landing Page -->
+    <div class="container mx-auto py-8">
+        <!-- Seção de Destaque -->
+        <section class="mb-8">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-4">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl font-semibold mb-4">Destaque Principal</h1>
+                    <p class="text-gray-700 mb-6">Uma breve descrição do que você oferece e por que é incrível.</p>
+                    <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Saiba Mais</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://via.placeholder.com/400" alt="Imagem de Destaque" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Serviço 1</h3>
+                    <p class="text-gray-700 mb-4">Descrição breve do serviço 1.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Saiba Mais</a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Serviço 2</h3>
+                    <p class="text-gray-700 mb-4">Descrição breve do serviço 2.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Saiba Mais</a>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Serviço 3</h3>
+                    <p class="text-gray-700 mb-4">Descrição breve do serviço 3.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Sobre -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Sobre Nós</h2>
+            <p class="text-gray-700 mb-6">Uma breve descrição da sua empresa e o que a diferencia das outras.</p>
+            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Saiba Mais</a>
+        </section>
+    </div>
+
+    <!-- Barra de Status -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
