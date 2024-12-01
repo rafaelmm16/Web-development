@@ -43,7 +43,7 @@
             <div class="price">
                 R$ <span>7.93</span>
             </div>
-            <div class="variant">
+            <div class="variant" id="variant-section">
                 <h3>SELECIONE UMA COR</h3>
                 <ul>
                     <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png"
@@ -68,6 +68,26 @@
             <button class="buy--btn">ADICIONE AO CARRINHO</button>
         </div>
     </section>
+
+    <script>
+        const variantSection = document.getElementById('variant-section');
+
+        variantSection.addEventListener('click', function (event) {
+            if (event.target.tagName === 'IMG') {
+
+                const mainImage = document.querySelector('.photo-main img');
+                mainImage.src = event.target.src;
+                mainImage.alt = event.target.alt;
+
+                const selectedImages = variantSection.querySelectorAll('.selected');
+                selectedImages.forEach(img => img.classList.remove('selected'));
+                event.target.classList.add('selected');
+
+
+                console.log('Clicou na imagem:', event.target.src);
+            }
+        });
+    </script>
 </body>
 
 </html>
