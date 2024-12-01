@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navbar -->
     <nav>
         <div class="container">
-            <h1 class="logo">Netflix</h1>
+            <a href="#" class="logo">
+                <img src="img.jpg" alt="Netflix Logo" width="150"> </a>
             <ul>
                 <li><a href="#" class="active">Início</a></li>
                 <li><a href="#">Séries</a></li>
                 <li><a href="#">Filmes</a></li>
                 <li><a href="#">Minha Lista</a></li>
             </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </div>
+
+            <div class="profile">
+                <img src="img.jpg" alt="Profile">
+            </div>
+
+
         </div>
     </nav>
 
-    <!-- Header -->
     <header class="banner">
         <div class="container">
-            <h1>Filme em Destaque</h1>
-            <button class="play-btn">Assistir Agora</button>
+            <div class="banner-content">
+                <h1>Stranger Things</h1>
+                <p>Em uma pequena cidade, um grupo de amigos se depara com eventos sobrenaturais e o desaparecimento de
+                    um de seus colegas, levando-os a uma jornada cheia de mistérios e perigos.</p>
+                <div class="buttons">
+                    <button class="play-btn"><i class="fas fa-play"></i> Assistir Agora</button>
+                    <button class="info-btn"><i class="fas fa-info-circle"></i> Mais Informações</button>
+                </div>
+            </div>
+            <div class="banner-fade"></div>
         </div>
+
     </header>
 
-    <!-- Main Content (Filmes/Séries) -->
     <section class="movies">
         <div class="container">
             <h2>Séries Populares</h2>
             <div class="movie-list">
-                <div class="movie-card">
-                    <img src="./img.jpg" alt="Nome do Filme">
-                    <h3>Nome do Filme</h3>
-                </div>
-                <div class="movie-card">
-                    <img src="./img.jpg" alt="Nome do Filme">
-                    <h3>Nome do Filme</h3>
-                </div>
-                <div class="movie-card">
-                    <img src="./img.jpg" alt="Nome do Filme">
-                    <h3>Nome do Filme</h3>
-                </div>
-                <div class="movie-card">
-                    <img src="./img.jpg" alt="Nome do Filme">
-                    <h3>Nome do Filme</h3>
-                </div>
-                <div class="movie-card">
-                    <img src="./img.jpg" alt="Nome do Filme">
-                    <h3>Nome do Filme</h3>
-                </div>
-                <div class="movie-card">
-                    <img src="./img.jpg" alt="Nome do Filme">
-                    <h3>Nome do Filme</h3>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <section class="movies">
+        <div class="container">
+            <h2>Filmes Recomendados</h2>
+            <div class="movie-list">
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <div class="container">
-            <p>&copy; 2024 Netflix Clone</p>
+            <p>© 2024 Netflix Clone</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <script src="https://kit.fontawesome.com/yourfontawesomekit.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
