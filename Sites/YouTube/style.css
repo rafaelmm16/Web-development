@@ -104,6 +104,8 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     padding: 8px;
+    position: sticky;
+    bottom: 0;
 }
 
 footer div {
@@ -128,3 +130,7 @@ footer img {
     object-fit: cover;
     border-radius: 50%;
 }
+
+a {
+    text-decoration: none;
+  }
